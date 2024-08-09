@@ -4,10 +4,6 @@ export enum ContentTypes {
   data = "data",
 }
 
-export interface HeroImage {
-  type: ContentTypes.hero;
-  imageURI: string;
-}
 
 export interface ImageText {
   type: ContentTypes.imageText;

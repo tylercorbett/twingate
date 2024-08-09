@@ -1,6 +1,7 @@
 "use client";
 import { isValidJSON } from "@/utils/isValidJSON";
 import React, { useState, useEffect } from "react";
+import HeroImage from "./components/Content/HeroImage";
 
 export default function Home() {
   const [hasError, setHasError] = useState<boolean>(false);
@@ -33,13 +34,13 @@ export default function Home() {
 
         {/* Right Side: Content Area with Border */}
         <div className="w-1/2 p-4 flex items-center justify-center">
-          <div className="w-full h-full border-4 border-gray-400 flex items-center justify-center">
+          <div className="w-full h-full py-3 px-4 border-4 border-gray-400 flex justify-center gap-4">
             {hasError ? (
               <p className="text-red-500 font-bold">
                 Invalid JSON format. Please check your input.
               </p>
             ) : (
-              <p>working content here</p>
+              <HeroImage imageURI="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg" />
             )}
           </div>
         </div>
