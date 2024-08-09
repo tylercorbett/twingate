@@ -12,10 +12,7 @@ export default function Home() {
 
   // Effect to check JSON validity on every change
   useEffect(() => {
-    if (jsonText === "") setHasError(false);
-    else {
-      setHasError(!isValidJSON(jsonText));
-    }
+    setHasError(!isValidJSON(jsonText));
   }, [jsonText]);
 
   return (
@@ -43,9 +40,7 @@ export default function Home() {
             </p>
           ) : (
             <>
-              <Content 
-                json={jsonText}
-              />
+              <Content json={jsonText} />
             </>
           )}
         </div>
