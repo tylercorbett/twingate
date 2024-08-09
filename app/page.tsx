@@ -46,20 +46,6 @@ export default function Home() {
               <Content 
                 json={jsonText}
               />
-              {/* <Data url="https://api.coincap.io/v2/assets" />
-              <ImageText
-                text="hello worlds"
-                imageURI="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg"
-                // text="This is some test text his is some test ts is some test ts is some test ts is some test ts is some test ts is some test ts is some test ts is some test t s is some test ts is some test ts is some test t s is some test ts is some test ts is some test ts is some test ts is some test ts is some test ts is some test ts is some test t s is some test ts is some test ts is some test ts is some test ts is some test ts is some test ts is some test t s is some test ts is some test ts is some test ts is some test ts is some test t s is some test ts is some test ts is some test ts is some test ts is some test ts is some test t s is some test ts is some test ts is some test ts is some test t exthis is some test text his is some test text his is some test text his is some test texthis is some test text his is some test text"
-                title="this is a test title"
-                // leftToRight={false}
-              /> */}
-              {/* <HeroImage imageURI="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg" /> */}
-              {/* <HeroImage imageURI="https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=Bg2K7j7J" /> */}
-              {/* <HeroImage imageURI="https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=Bg2K7j7J" />
-              <HeroImage imageURI="https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=Bg2K7j7J" />
-              <HeroImage imageURI="https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=Bg2K7j7J" />
-              <HeroImage imageURI="https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=Bg2K7j7J" /> */}
             </>
           )}
         </div>
