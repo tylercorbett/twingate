@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import HeroImage from "./HeroImage";
 import ImageText from "./ImageText";
 import Data from "./Data";
+import { ContentTypes } from "@/types/contentTypes";
 
 interface Props {
   json: string;
@@ -31,11 +32,11 @@ export default function Content({ json }: Props) {
 
   const renderContent = (item: any) => {
     switch (item.type) {
-      case "hero":
+      case ContentTypes.hero:
         return <HeroImage key={item.imageURI} {...item} />;
-      case "imageText":
+      case ContentTypes.imageText:
         return <ImageText key={item.imageURI} {...item} />;
-      case "data":
+      case ContentTypes.data:
         return <Data key={item.url} {...item} />;
       default:
         return null;
