@@ -15,7 +15,7 @@ export default function Home() {
   }, [jsonText]);
 
   return (
-    <main className="min-h-screen p-8">
+    <main className="min-h-screen">
       <div className="flex h-full">
         {/* Left Side: JSON Textarea */}
         <div className="w-1/2 p-4 h-screen">
