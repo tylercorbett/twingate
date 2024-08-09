@@ -11,5 +11,7 @@ Second, run the development server:
 pnpm dev
 ```
 
+Feel free to copy the data in test.json to quickly try out the app
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
