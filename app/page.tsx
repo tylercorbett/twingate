@@ -33,15 +33,13 @@ export default function Home() {
         </div>
 
         {/* Right Side: Content Area with Border */}
-        <div className=" w-1/2 h-screen overflow-y-auto px-4 py-2 border-4 border-gray-400 flex flex-col justify-start gap-4">
+        <div className=" w-1/2 h-screen overflow-y-auto px-4 py-2 border-4 border-gray-400">
           {hasError ? (
             <p className="text-red-500 font-bold">
               Invalid JSON format. Please check your input.
             </p>
           ) : (
-            <>
-              <Content json={jsonText} />
-            </>
+            <Content json={jsonText} />
           )}
         </div>
       </div>

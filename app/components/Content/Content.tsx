@@ -49,5 +49,5 @@ export default function Content({ json }: Props) {
     return <div className="text-red-600">Error: {error}</div>;
   }
 
-  return <div>{contentArray.map((item) => renderContent(item))}</div>;
+  return <div className="flex-col flex gap-4">{contentArray.map((item) => renderContent(item))}</div>;
 }
