@@ -3,6 +3,7 @@ import { isValidJSON } from "@/utils/isValidJSON";
 import React, { useState, useEffect } from "react";
 import HeroImage from "./components/Content/HeroImage";
 import ImageText from "./components/Content/ImageText";
+import Data from "./components/Content/Data";
 
 export default function Home() {
   const [hasError, setHasError] = useState<boolean>(false);
@@ -41,6 +42,7 @@ export default function Home() {
             </p>
           ) : (
             <>
+              <Data url="https://api.coincap.io/v2/assets" />
               <ImageText
                 text="hello worlds"
                 imageURI="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg"

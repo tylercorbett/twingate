@@ -5,7 +5,3 @@ export enum ContentTypes {
 }
 
 
-export interface Data {
-  type: ContentTypes.data;
-  url: string;
-}
