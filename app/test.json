@@ -27,5 +27,9 @@
     "text": "This could also be considered a test",
     "title": "Test with title",
     "leftToRight": true
+  },
+  {
+    "type": "data",
+    "url": "https://api.coincap.io/v2/assets"
   }
 ]

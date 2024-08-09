@@ -14,6 +14,8 @@ export default function Content({ json }: Props) {
   const [contentArray, setContentArray] = useState<any[]>([]);
   const [error, setError] = useState<string | null>(null);
 
+  // if (json.length === 0) return <div>Content will display here</div>;
+
   useEffect(() => {
     try {
       const parsedJson = JSON.parse(json);
@@ -44,7 +46,7 @@ export default function Content({ json }: Props) {
   };
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <div className="text-red-600">Error: {error}</div>;
   }
 
   return <div>{contentArray.map((item) => renderContent(item))}</div>;
