@@ -14,7 +14,7 @@ export default function Data({ url }: Props) {
     setLoading(true);
     try {
       const response = await fetch(url);
-      const result = await response.text(); // Assuming the response is in text format
+      const result = await response.text();
       setData(result);
     } catch (error) {
       setData("Error fetching data");
