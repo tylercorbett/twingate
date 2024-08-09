@@ -1,9 +1,6 @@
 "use client";
 import { isValidJSON } from "@/utils/isValidJSON";
 import React, { useState, useEffect } from "react";
-import HeroImage from "./components/Content/HeroImage";
-import ImageText from "./components/Content/ImageText";
-import Data from "./components/Content/Data";
 import Content from "./components/Content/Content";
 
 export default function Home() {
