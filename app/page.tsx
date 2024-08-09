@@ -34,13 +34,16 @@ export default function Home() {
 
         {/* Right Side: Content Area with Border */}
         <div className="w-1/2 p-4 flex items-center justify-center">
-          <div className="w-full h-full py-3 px-4 border-4 border-gray-400 flex justify-center gap-4">
+          <div className="w-full h-full py-3 px-4 border-4 border-gray-400 flex-col justify-center gap-4">
             {hasError ? (
               <p className="text-red-500 font-bold">
                 Invalid JSON format. Please check your input.
               </p>
             ) : (
-              <HeroImage imageURI="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg" />
+              <>
+                <HeroImage imageURI="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg" />
+                <HeroImage imageURI="https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=Bg2K7j7J" />
+              </>
             )}
           </div>
         </div>
