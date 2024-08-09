@@ -8,7 +8,10 @@ export default function Home() {
 
   // Effect to check JSON validity on every change
   useEffect(() => {
-    setHasError(!isValidJSON(jsonText));
+    if (jsonText === "") setHasError(false);
+    else {
+      setHasError(!isValidJSON(jsonText));
+    }
   }, [jsonText]);
 
   return (
@@ -31,10 +34,12 @@ export default function Home() {
         {/* Right Side: Content Area with Border */}
         <div className="w-1/2 p-4 flex items-center justify-center">
           <div className="w-full h-full border-4 border-gray-400 flex items-center justify-center">
-            {hasError && (
+            {hasError ? (
               <p className="text-red-500 font-bold">
                 Invalid JSON format. Please check your input.
               </p>
+            ) : (
+              <p>working content here</p>
             )}
           </div>
         </div>
