@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
         {/* Right Side: Content Area with Border */}
-        <div className=" w-1/2 h-[98%] overflow-y-auto px-4 py-2 border-4 border-gray-400">
+        <div className=" w-1/2 h-[98%] overflow-y-auto px-4 py-2 border border-gray-400">
           {hasError ? (
             <p className="text-red-500 font-bold">
               Invalid JSON format. Please check your input.
