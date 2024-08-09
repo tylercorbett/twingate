@@ -7,7 +7,6 @@ export default function Home() {
   const [hasError, setHasError] = useState<boolean>(false);
   const [jsonText, setJsonText] = useState<string>("");
 
-  // Effect to check JSON validity on every change
   useEffect(() => {
     setHasError(!isValidJSON(jsonText));
   }, [jsonText]);

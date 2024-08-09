@@ -14,13 +14,9 @@ export default function Content({ json }: Props) {
   const [contentArray, setContentArray] = useState<any[]>([]);
   const [error, setError] = useState<string | null>(null);
 
-  // if (json.length === 0) return <div>Content will display here</div>;
-
   useEffect(() => {
     try {
       const parsedJson = JSON.parse(json);
-
-      // Check if parsedJson is an array
       if (Array.isArray(parsedJson)) {
         setContentArray(parsedJson);
       } else {
