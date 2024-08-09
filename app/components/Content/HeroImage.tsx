@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 
 export interface Props {
   imageURI: string;
@@ -9,7 +8,7 @@ export interface Props {
 
 export default function HeroImage({ imageURI }: Props) {
   return (
-    <div className="relative w-full p-2">
+    <div className="relative w-full p-2 border border-black">
       <img src={imageURI} />
     </div>
   );

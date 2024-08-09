@@ -2,6 +2,7 @@
 import { isValidJSON } from "@/utils/isValidJSON";
 import React, { useState, useEffect } from "react";
 import HeroImage from "./components/Content/HeroImage";
+import ImageText from "./components/Content/ImageText";
 
 export default function Home() {
   const [hasError, setHasError] = useState<boolean>(false);
@@ -33,14 +34,21 @@ export default function Home() {
         </div>
 
         {/* Right Side: Content Area with Border */}
-        <div className=" w-1/2 h-screen overflow-y-auto px-4 border-4 border-gray-400 flex flex-col justify-start gap-4">
+        <div className=" w-1/2 h-screen overflow-y-auto px-4 py-2 border-4 border-gray-400 flex flex-col justify-start gap-4">
           {hasError ? (
             <p className="text-red-500 font-bold">
               Invalid JSON format. Please check your input.
             </p>
           ) : (
             <>
-              <HeroImage imageURI="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg" />
+              <ImageText
+                text="hello worlds"
+                imageURI="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg"
+                // text="This is some test text his is some test ts is some test ts is some test ts is some test ts is some test ts is some test ts is some test ts is some test t s is some test ts is some test ts is some test t s is some test ts is some test ts is some test ts is some test ts is some test ts is some test ts is some test ts is some test t s is some test ts is some test ts is some test ts is some test ts is some test ts is some test ts is some test t s is some test ts is some test ts is some test ts is some test ts is some test t s is some test ts is some test ts is some test ts is some test ts is some test ts is some test t s is some test ts is some test ts is some test ts is some test t exthis is some test text his is some test text his is some test text his is some test texthis is some test text his is some test text"
+                title="this is a test title"
+                // leftToRight={false}
+              />
+              {/* <HeroImage imageURI="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg" /> */}
               <HeroImage imageURI="https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=Bg2K7j7J" />
               {/* <HeroImage imageURI="https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=Bg2K7j7J" />
               <HeroImage imageURI="https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=Bg2K7j7J" />
