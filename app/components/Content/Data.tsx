@@ -7,7 +7,7 @@ export interface Props {
 }
 
 export default function Data({ url }: Props) {
-  const [data, setData] = useState<string>("Loading...");
+  const [data, setData] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
 
   const fetchData = async () => {
